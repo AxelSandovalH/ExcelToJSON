@@ -48,7 +48,7 @@ app.post('/exceltojson',upload.single('file'), (req,res)=>{
 
         // Download the file 
 
-        res.download(outputPath, "output.son", (err) => {
+        res.download(outputPath, "output.json", (err) => {
             if(err){
                 console.log(err)
             }else{
